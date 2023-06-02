@@ -73,13 +73,13 @@
 		/>
 		<!-- <img class="image" src={data.image} alt="Barca Universal" /> -->
 		<div class="LowerContainer">
-			<h3 class="Title">{data.title}</h3>
-			<span class="Description Secondary">{data.description}</span>
+			<h3 class="Title">{data.title || ''}</h3>
+			<span class="Description Secondary">{data.description || ''}</span>
 			<div class="Secondary SiteDetails">
 				{#if data.siteName}
 					<span>{data.siteName} • </span>
 				{/if}
-				<span>{data.hostname}</span>
+				<span>{data.hostname || ''}</span>
 			</div>
 		</div>
 	{/await}
